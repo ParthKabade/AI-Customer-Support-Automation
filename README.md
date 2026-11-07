@@ -142,7 +142,3 @@ These notes describe the files in this checkout, rather than assuming the missin
 - `scripts/seed_knowledge_base.py` looks for Markdown files in a top-level `knowledge_base/` directory. That directory is not present in the project root. Markdown knowledge-base files are currently located under `.venv/knowledge_base/`, which is a virtual-environment directory, and the Docker build does not copy them into the image.
 - The `ai_coustmer_service/` and `next-app/` directories are starter frontends separate from `dashboard/`; only `dashboard/` is built in the root Dockerfile.
 - The root directory has `.env` and `credentials.json` in the inspected copy. Confirm neither is staged or committed before publishing this project.
-
-## Project guide
-
-This project follows the [Datalumina Learn: Customer support automation](https://learn.datalumina.com/docs/customer-support-automation) guide. The guide describes the intended Gmail, Supabase, AI pipeline, evaluation, dashboard, and Docker deployment workflow.
