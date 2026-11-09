@@ -54,7 +54,6 @@ The project configuration indicates these tools and services are needed:
 - A Supabase/PostgreSQL database
 - An Anthropic API key for the configured Pydantic AI models
 
-The detailed account and OAuth setup is covered by the linked project guide below.
 
 ## Configuration
 
@@ -80,7 +79,6 @@ Set the values required by your environment in `.env`:
 | `DASHBOARD_PASSWORD` | Password required by the dashboard API; the backend rejects login when this is empty. |
 | `PYDANTIC_AI_NO_BANNER` | Pydantic AI environment option included in the template. |
 
-`credentials.json` is used by the Gmail OAuth helper. Do not publish OAuth credentials, refresh tokens, database passwords, or API keys. The root `.dockerignore` excludes `.env` and `credentials.json` from the Docker build context; it does not prevent Git from tracking them. The inspected project root does not currently contain a root `.gitignore`, so check the files staged for GitHub before publishing.
 
 ## Database setup
 
